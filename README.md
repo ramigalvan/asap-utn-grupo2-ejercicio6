@@ -1,4 +1,4 @@
-![](diagramas/Diagram 2025-08-07 15-39-06.png)
+![](diagramas/diagrama-uml.png)
 
 # Clase 6
 
