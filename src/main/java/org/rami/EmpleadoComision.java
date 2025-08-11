@@ -1,6 +1,7 @@
 package org.rami;
 
 public class EmpleadoComision extends Empleado{
+    private static final double SALARIO_MINIMO = 20000;
     private int clientesCaptados;
     private double montoACobrar;
 
@@ -13,7 +14,7 @@ public class EmpleadoComision extends Empleado{
     @Override
     public double calcularSalario() {
         double salario = clientesCaptados * montoACobrar;
-        return salario < 20000 ? 20000 : salario;
+        return salario < SALARIO_MINIMO ? SALARIO_MINIMO : salario;
     }
 
     public int getClientesCaptados() {
